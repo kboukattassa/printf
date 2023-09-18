@@ -21,7 +21,7 @@ void format_specifier(va_list args, char spec, int *i)
 		default:
 			_putchar('%');
 			_putchar(spec);
-			i+= 2;
+			i += 2;
 			break;
 	}
 }

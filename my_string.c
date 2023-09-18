@@ -11,6 +11,7 @@ int print_string(char *str)
 	if (str == NULL)
 	{
 		char *null_str = "(null)";
+
 		while (*null_str)
 		{
 			_putchar(*null_str);

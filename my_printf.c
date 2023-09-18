@@ -35,6 +35,7 @@ int _printf(const char *format, ...)
 			else if (*format == 's')
 			{
 				char *str = va_arg(args, char *);
+
 				if (str == NULL)
 				{
 					print_string("(null)");
