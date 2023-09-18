@@ -44,6 +44,13 @@ int _printf(const char *format, ...)
 				{
 					i += print_string(str);
 				}
+			}
+			else
+			{
+				_putchar('%');
+				_putchar(*format);
+				i += 2;
+			}
 		}
 		else
 		{
