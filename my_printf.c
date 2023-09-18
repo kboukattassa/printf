@@ -24,6 +24,23 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				i++;
 			}
+			else if (*format == 'c')
+			{
+				_putchar(va_arg(args, int));
+				i++;
+			}
+			else if (*format == 's')
+			{
+				char *str = va_arg(args, char *);
+				if (str == NULL)
+				{
+					print_string("(null)");
+					i += 6;
+				}
+				else
+				{
+					i += print_string(str);
+				}
 		}
 		else
 		{
@@ -31,12 +48,6 @@ int _printf(const char *format, ...)
 			i++;
 		}
 		format++;
-		else if (*format == 'c')
-		{
-			_putchar(va_arg(args, int));
-			i++;
-		}
-
 	}
 	return (i);
 }
