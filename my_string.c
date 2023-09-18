@@ -6,12 +6,17 @@
  */
 int print_string(char *str)
 {
-	unsigned int i;
+	int i = 0;
 
-	for (i = 0; i != '\0'; i++)
+	if (str == NULL)
 	{
-		putchar(i);
+		char *null_str = "(null)";
+		while (*null_str)
+		{
+			_putchar(*null_str);
+			i++;
+			null_str++;
+		}
 	}
-	putchar("\n");
 
 }
