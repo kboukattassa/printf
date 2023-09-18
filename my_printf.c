@@ -1,4 +1,5 @@
 #include "main.h"
+int print_string(char *str);
 /**
  * _printf - produces output according to a format
  * @format: the format string
@@ -51,5 +52,6 @@ int _printf(const char *format, ...)
 		}
 		format++;
 	}
+	va_end(args);
 	return (i);
 }
