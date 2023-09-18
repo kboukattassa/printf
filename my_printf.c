@@ -1,6 +1,6 @@
-#include "my_main.h"
+#include "main.h"
 /**
- *
+ * _printf
  *
  *
  */
@@ -31,6 +31,12 @@ int _printf(const char *format, ...)
 			i++;
 		}
 		format++;
+		else if (*format == 'c')
+		{
+			_putchar(va_arg(args, int));
+			i++;
+		}
+
 	}
 	return (i);
 }
