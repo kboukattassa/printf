@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * _printf
+ * _printf - produces output according to a format
+ * @format: the format string
+ * @...: the var arguments
  *
- *
+ * Return: number of characters printed, -1 if error
  */
 int _printf(const char *format, ...)
 {
