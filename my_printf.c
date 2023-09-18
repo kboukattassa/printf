@@ -45,6 +45,19 @@ int _printf(const char *format, ...)
 				{
 					i += print_string(str);
 				}
+			else if (*format == 'd' || *format == 'i')
+			{
+				int num = va_arg(args, int);
+
+				if (num == 0)
+				{
+					_putchar('0');
+					i++;
+				}
+				else
+				{
+					i += print_int(num);
+				}
 			}
 			else
 			{
