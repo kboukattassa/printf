@@ -7,4 +7,9 @@
  * Return: 0 on success, error otherwise
  */
 int main(void)
-{}
+{
+	printf("First letter is %c\n", 'K');
+	_printf("First letter is %c\n", 'K');
+
+	return (0);
+}
