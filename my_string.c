@@ -18,5 +18,14 @@ int print_string(char *str)
 			null_str++;
 		}
 	}
-
+	else
+	{
+		while (*str)
+		{
+			_putchar(*str);
+			i++;
+			str++;
+		}
+	}
+	return (i);
 }
