@@ -4,7 +4,7 @@
  * @num: int to be converted
  * Return: number of digits in the binary number
  */
-unsigned int print_binary(unsigned int num)
+void print_binary(unsigned int num)
 {
 	int i = 0, count = 0;
 	int binary_reverse[32];
