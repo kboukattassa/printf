@@ -46,6 +46,11 @@ int _printf(const char *format, ...)
 					i += print_string(str);
 				}
 			}
+			else if (*format == 'b')
+			{
+				unsigned int num - va_arg(args, unsigned int);
+				return (print_binary(num));
+			}
 			else if (*format == 'd' || *format == 'i')
 			{
 				int num = va_arg(args, int);
@@ -66,11 +71,6 @@ int _printf(const char *format, ...)
 				_putchar(*format);
 				i += 2;
 			}
-		}
-		else if (*format == 'b')
-		{
-			unsigned int num = va_arg(args, unsigned int);
-			return (print_binary(num));
 		}
 		else
 		{
