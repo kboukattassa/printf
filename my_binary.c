@@ -4,11 +4,15 @@
  * @num: int to be converted
  * Return: number of digits in the binary number
  */
-int print_binary(unsigned int num)
+int print_binary(int num)
 {
 	int i = 0, count = 0;
 	int binary_reverse[32];
 
+	if (num < 0)
+	{
+		return (-1);
+	}
 	if (num == 0)
 	{
 		_putchar('0');
