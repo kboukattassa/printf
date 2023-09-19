@@ -48,7 +48,7 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 'b')
 			{
-				unsigned int num = va_arg(args, unsigned int);
+				int num = va_arg(args, int);
 
 				return (print_binary(num));
 			}
