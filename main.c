@@ -10,7 +10,8 @@ int main(void)
 {
 	printf("First letter is %c\n", 'K');
 	_printf("First letter is %c\n", 'K');
-	_printf("%b\n", 98);
+	_printf("%b", INT_MAX);
+	_printf("%b", INT_MIN);
 	return (0);
 }
 
