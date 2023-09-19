@@ -21,4 +21,11 @@ int print_binary(unsigned int num)
 		i++;
 	}
 	i--;
+	while (i >= 0)
+	{
+		_putchar(binary_reverse[i] + '0');
+		i--;
+		count++;
+	}
+	return (count);
 }
