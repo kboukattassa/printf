@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_int - prints integers
+ * print_int - prints the integers
  * @a: int to be printed
  * Return: characters printed
  */
