@@ -2,7 +2,7 @@
 /**
  * print_binary - func that convert ints to binary
  * @num: int to be converted
- * @Return: number of digits in the binary number
+ * Return: number of digits in the binary number
  */
 int print_binary(unsigned int num)
 {
