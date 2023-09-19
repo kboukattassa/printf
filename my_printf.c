@@ -50,7 +50,8 @@ int _printf(const char *format, ...)
 			{
 				unsigned int num = va_arg(args, unsigned int);
 
-				return (print_binary(num));
+				print_binary(num);
+				i++;
 			}
 			else if (*format == 'd' || *format == 'i')
 			{
