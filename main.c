@@ -10,5 +10,6 @@ int main(void)
 {
 	printf("First letter is %c\n", 'K');
 	_printf("First letter is %c\n", 'K');
+	_printf("%b\n", 98);
 	return (0);
 }
