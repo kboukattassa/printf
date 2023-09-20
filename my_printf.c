@@ -48,9 +48,9 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 'b')
 			{
-				unsigned int num = va_arg(args,unsigned int);
+				unsigned int n = va_arg(args,unsigned int);
 
-				return (print_binary(num));
+				return (print_binary(n));
 			}
 			else if (*format == 'd' || *format == 'i')
 			{
