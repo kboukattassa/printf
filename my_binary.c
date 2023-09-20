@@ -27,6 +27,5 @@ unsigned int print_binary(unsigned int num)
 		i--;
 		count++;
 	}
-	_putchar('\n');
 	return (count);
 }
